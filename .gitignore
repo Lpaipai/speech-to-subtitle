@@ -1,0 +1,10 @@
+.venv/
+.tmp/
+models/
+build/
+dist/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.speech-to-subtitle-config.json
+.pytest_cache/

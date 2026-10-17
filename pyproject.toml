@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=80"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "speech-to-subtitle"
+version = "0.1.1"
+description = "Local speech-to-subtitle desktop app powered by faster-whisper."
+requires-python = ">=3.11"
+dependencies = [
+  "faster-whisper>=1.2.1",
+  "opencc-python-reimplemented==0.1.7",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
